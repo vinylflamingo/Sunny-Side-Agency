@@ -1,0 +1,50 @@
+/*GLOBAL STYLING */
+*{
+    margin: 0 auto;
+    border: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*MAIN BLOCK*/
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1440px;
+    background-color:bisque;
+}
+
+/*NAV SECTION*/
+.nav {
+    display: flex;
+    height:4rem;
+
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-spacer {
+    display: block;
+    width: 50rem;
+    
+}
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list li {
+    display: inline;
+}
+
+
+
