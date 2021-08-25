@@ -16,6 +16,23 @@ ul {
     list-style-type: none;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #E4E4E4;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 
 
 /*MAIN BLOCK*/
@@ -28,16 +45,6 @@ ul {
     background-color: #FFFBF8;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-    display: none;
-}
-
-body {
-    background-color: #FFFBF8;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
 
 /*NAV SECTION*/
 .nav {
@@ -100,23 +107,25 @@ body {
 }
 
 
-/*TWO COLUMN TEXT AND IMG COMPONENT */
+/* TWO COLUMN FRAME  */
 
-.tc-txt-img {
+.tc {
     display: flex;
     flex-direction: row;
     height: 600px;
     width: 100%;
 
 }
-.tc-txt-img .l {
+.tc .l {
     width: 50%;
     height: 600px;
+    order: 1;
 
 }
-.tc-txt-img .r {
+.tc .r {
     width: 50%;
     height: 600px;
+    order: 2;
 }
 
     /*TEXT COMPONENT */
@@ -127,14 +136,12 @@ body {
         flex-direction: column;
         margin-top: 30%;
     }
-
     .text-card h1 {
         font-family: 'Fraunces', serif;
         font-weight: 1000;
         font-size: 35px;
         color: #233040;
     }
-
     .text-card p {
         font-family: 'Barlow', sans-serif;
         font-weight: 400;
@@ -142,12 +149,10 @@ body {
         margin-top: 30px;
         color: #76747F;
     }
-
     .cta {
         display: flex;
         margin-left: 0;
     }
-
     .cta p {
         font-family: 'Fraunces', serif;
         font-weight: 900;
@@ -169,14 +174,142 @@ body {
 
     }
 
-    /*IMG COMPONENT*/
+    /*BASIC IMG COMPONENT*/
     .r .egg {
         width: 100%;
         height: 100%;
         background-image: url(./images/desktop/image-transform.jpg);
         background-size: cover;
         background-position: center center;
-
     }
+    .l .glass {
+        width: 100%;
+        height: 100%;
+        background-image: url(./images/desktop/image-stand-out.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    /* IMG WITH TEXT OVERLAY COMPONENT */
+    .overlay {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+    }
+    .l .overlay {
+        background-image: url(./images/desktop/image-graphic-design.jpg);
+    }
+    .r .overlay {
+        background-image: url(./images/desktop/image-photography.jpg);
+    }
+    .overlay .text {
+        height: 100px;
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 60%;
+        text-align: center;
+    }
+    .text h1 {
+        font-family: 'Fraunces', serif;
+        font-weight: 1000;
+        font-size: 35px;
+    }
+    .l .text h1{
+        color: #1F5146;
+    }
+    .r .text h1{
+        color: #184C64; 
+    }
+    .text p {
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: 25px;
+        line-height: 25 px;
+    } 
+    .l .text p {
+        color: #357366;
+    }
+    .r .text p {
+        color: #105570;
+    }
+
+/* TESTIMONIAL COMPONENT */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    height: 775px;
+    width: 100%;
+}
+.testimonial p {
+    padding-top: 170px;
+    font-family: 'Fraunces', serif;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #A6A7A9;
+}
+.testimonial-block {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    height: 350px;
+    margin-top: 85px;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.testimonial-card .profile-pic img {
+    border-radius: 50%;
+    width: 72px;
+}
+
+.quote p {
+    font-family: 'Barlow', sans-serif;
+    color: #28303C;
+    font-size: 17px;
+    letter-spacing: normal;
+    padding-top: 55px;
+    line-height: 30px;
+}
+.author {
+    margin-top: 80px;
+}
+
+.author h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.author p {
+    font-family: 'Barlow', sans-serif;
+    color: #B2B1AF;
+    font-size: 14px;
+    letter-spacing: normal;
+    padding-top: 0px;
+    line-height: 35px;
+}
+
+
+    
+
+     
+
+
+
+
+
+
 
 
